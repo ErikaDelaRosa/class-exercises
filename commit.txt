@@ -1,0 +1,1 @@
+git add . && git commit -a -m "daily exercises" && git push origin master
