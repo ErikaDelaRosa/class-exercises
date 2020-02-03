@@ -1,52 +1,115 @@
-// Array.isArray(arr)
-const names = ["Ali", "Hadi", "Olga"];
-let x = 1;
-console.log(Array.isArray(names)); //ask if it is an array
+// ARRAY topics
+// reverse the string: "Javascript"
 
-// Array.includes ()
-console.log(names.includes("Hadi")); // if there is included
-console.log(names.indexOf("Hadi")); // show where is located
+const str1 = "Javascript";
+let strToArr = str1.split("");
+strToArr.reverse();
+let revStr = strToArr.join("");
+console.log(revStr); 
+// Add your pets names:
+// Access one of your parents names:
+//Update the name of one of your parents.
+/*const parNames= ["Marta", "Elena"];
+let bbfArray = 
+let mom = bbfArray [2];
+mom = "Kat";
+parNames [2] =mom;
+console.log(bffArray);*/
 
-//Array.reverse () // Reverse the order of the things, i can use it on array and nomal strings
-let rev = names.reverse();
-console.log(rev); // reverse the whole index
+//FUNCTIONS
+/* function exist between two brackets, as a local scope. */
 
-//Array.concat()
-let arr1 = [1, 2, 3];
-let arr2 = [4, 5, 6];
-let arrTotal = arr1.concat(arr2);
-console.log(arrTotal);
+function sum (x,y) {
+    let fun ="Too in function";
+console.log(fun);
+} 
+let fun = sum(2 + 4); // function call
+console.log(fun); 
 
-// Array.filter() //
-let result1 = names.filter(name => name.length == 4);
-console.log(result1);
+function age (x){
+    if (x==30) {
+        return "You are cool";
+    } else {
+        return "You are nice";
+    }
+}
+console.log(age(20));
 
-//Array.find() //return to the value of the first element
-let result2 = names.find(name => name[0] == "A");
-console.log(result2);
+const numbers= [1,2,3,4,5,10,11,14];
+function arrBig (array){
+    let result = array.filter(num => num <= 5);
+    return result;
+}
+console.log(arrBig(numbers));
+console.log(arrBig(numbers)); 
 
-//Array.map // creates new array
-const intArray = [2, 3, 4, 5, 6];
-let result3 = intArray.map(x => x + 1);
-console.log(result3);
+function fourArrChar (array){
+    let result = [];
+    for (let i = 0; i< array.length; i ++){
+        if (array[i].length == 4) {
+            result.push(array[i])
+        }
+    }
+    return result;
+} // new function: 
+function Och(array) {
+let result =[]; 
+for (let i = 0; i < array.length; i ++){
+    if (array[i] [0] == "O"){
+        result.push(array[i]); 
+    }
+}
+return result;
+}
+const names2 = ["Ali", "Nancy","Marta", "Hadi"];
+console.log(fourArrChar(names2));
+console.log(Och (names2));
+const monthNames = ["January","February", "March", "April","May", "Jun","July", "August","September", "October", "November", "December"];
 
-/*Reverse the string: “JavaScript”.
-Make an array of your siblings’ names or your favorite movie characters’ names.
-Make an array of your parents’ names.
-Combine these two arrays.
-Add your pets’ names.
-Reverse the order of the array.
-Access one of your parents’ names.
-Update the name of one of your parents.*/
+function nameOfThatMonth (num) { 
+    let result = "";
+    switch (num) {
+    }
+    return result; 
+        case 1: 
+        console.log(monthNames[0]);
+        break;
+        case 2:
+            console.log(monthNames[1]);
+            break;
+            case3 :
+            console.log(monthNames[2]);
+            break;
+            case3 :
+            console.log(monthNames[3]);
+            break;
+            case3 :
+            console.log(monthNames[4]);
+            break;
+            case3 :
+            console.log(monthNames[5]);
+            break;
+            case3 :
+            console.log(monthNames[6]);
+            break;
+            case3 :
+            console.log(monthNames[7]);
+            break;
+            case3 :
+            console.log(monthNames[8]);
+            break;
+            case3 :
+            console.log(monthNames[9]);
+            break;
+            case3 :
+            console.log(monthNames[10]);
+            break;
+            case3 :
+            console.log(monthNames[11]);
+            break;
+            default: "this is not a month";
+    }
 
-let movies = ["Aladdin", "Snowwhite", "Frozen"];
-let papas = ["Paco", "Isabel"];
-let combine = movies.concat(papas);
-console.log(combine);
-let pets = ["Simba", "Tavi"];
-let rev1 = pets.reverse();
-console.log(rev1);
-let result4 = papas.find(papas => papas[1] == "I");
-console.log(result4);
+console.log(nameOfThatMonth(4));
+console.log(nameOfThatMonth(3));
 
-///////
