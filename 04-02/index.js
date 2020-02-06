@@ -72,7 +72,7 @@ console.log(Object.keys(person));
 console.log(Object.values(person));
 
 //Object.entries() value + keys
-for (let [key,value] of Object.entries(person)) { // i declare two variables inside the square brackets
+for (let [key,value] of Object.entries(person)) { // I declare two variables inside the square brackets
 console.log(`${key} : ${value}`); // for OF is used more with values(to modify them)
 }
 // Methods
