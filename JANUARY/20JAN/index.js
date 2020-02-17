@@ -33,7 +33,7 @@ console.log(typeof arrInt);
 
 // Array.indexOf (<item>)
 var firstNameArr = ["Ali", "Olga", "Marta"];
-console.log(firstNameArr.indexOf("Nancy")); // -1 results means it doesn exist
+console.log(firstNameArr.indexOf("Nancy")); // -1 results means it doesn't exist
 console.log(firstNameArr.indexOf("Ali"));
 
 let arrStringName = [];
