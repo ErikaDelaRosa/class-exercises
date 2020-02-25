@@ -1,0 +1,39 @@
+ul li{ 
+color: darkmagenta;
+}
+
+ol li{
+    color:green
+}
+
+table {
+    background-color: greenyellow;
+}
+th {
+    font-size:22px;
+}
+td {
+    font-size: 18px;
+}
+#name {
+    color: snow;
+}
+/*the id are called by hastag */
+#firstRow {
+color: purple;
+}
+/* the class are called with dot */
+.age {
+    color: #8D3DFF;
+}
+
+.div1{
+    background-color: darkgoldenrod;
+}
+
+.div2{
+    background-color: indianred;
+}
+#required{
+    color:red
+}
