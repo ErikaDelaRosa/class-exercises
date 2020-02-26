@@ -1,0 +1,103 @@
+body{
+    /*background-image: url(../IMG/cat.jpeg); we have to use the dots to retrieve the photo as we are not working in server*/
+    background-color: papayawhip;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    font-family: 'Sofia';   
+}
+.animal-img {
+    width: 200px;
+    height: 150;
+    border: 4px black solid; 
+    border-top: 3px red dashed;
+    /* i need to add what type of border after the color if I want to apply it(in this case, dashed)*/
+    border-bottom: 3px red dashed;
+    padding: 5px 5px 10px 5px;
+    border-color: palegreen;
+    border-style: dotted; /*how do i want the border, in this case with dots*/
+    /* control + slash +7 to have the comments mark */
+    border-radius: 50% 50% 25% 25%;
+}
+
+
+/*with comas, we separate the group selectors with commas. All will respond to the same rule*/
+h1,h4,p,div {
+    color:darkorchid;
+}
+/*the rule below only applies to this element, so i can repeat it in two places*/
+/*styling my h1*/
+
+h1{
+    font-size: 20px;
+}
+.sq {
+    width: 100px;
+    height: 100px;
+    border-color: 15px blueviolet;
+    background-color: brown;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border-color:15px coral;
+    background-color: gray;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.rectangle {
+    width: 100px;
+    height: 150px;
+    background-color: indianred;
+    border-color: 15px gold;
+    border: 25px 50px 25px 50px;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-top:40px solid transparent;
+    border-right:20px solid blue;
+    border-bottom: 0px solid transparent;
+}
+.sqcircle {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    border-radius: 50%;
+}
+.test-box {
+width:50%;
+height: 70%;
+border: black solid;
+}
+.random-text {
+    letter-spacing: 2px;
+    word-spacing: 50px;
+    line-height: 20px;
+    text-align:center;
+    text-transform: uppercase; 
+    text-decoration: underline;
+    text-indent: 30px;
+}
+
+p:last-child {
+    background-color: tomato;
+}
+p:only-child{
+    background-color: turquoise;
+}
+.move:hover {
+    width: 120px;
+    height: 190px;
+    background-color: yellow;
+    border: 20px palevioletred dotted;
+    font-size: 20px;
+}
+
+.nile{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+
+}
