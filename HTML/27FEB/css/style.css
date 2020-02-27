@@ -1,0 +1,74 @@
+a {
+    text-decoration-color: blueviolet;
+    font-size: 2em;
+    /*we use text decoration none to remove the line underline the link*/
+    text-decoration: none;
+    padding: 3px;
+}
+p{
+    font-size: 2em;
+}
+/*you pass the mouse and you active it */
+a:active {
+    color: lightblue;
+}
+a:link {
+    color: pink;
+}
+a:visited {
+    color:magenta;
+}
+a:hover {
+    /*transition is animation, change background color*/ 
+    transition: 3s;
+    background-color: purple;
+    box-shadow: 3px 3px 2px rgba(95,79,78, 0.69) ;
+}
+nav ul li {
+    background-color:lightsalmon;
+    list-style: none;
+    display: inline; /*take away the black dot on in front of the word*/
+    border: 2px black solid;
+    padding: 5px;
+}
+/*we use the star to style the page*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+/*
+The :before and :after selectors in CSS is used to add content before and after an element.*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.about {
+width: 50px;
+height: 50px;
+}
+
+.about:hover {
+transition: 3s;    
+width: 60px;
+height: 60px;
+box-shadow: 3px 3px 3px rgba(#FF38A8);
+}
+div{
+    margin:20px;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: justify;
+    padding: 5px;
+  
+}
+#arab{
+    text-align: right;
+}
