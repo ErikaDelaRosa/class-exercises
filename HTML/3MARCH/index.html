@@ -1,256 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
-</head>
-<body class="main-page">
-    <!-- content -->
-    <div class="main-text">
-      <p id="random-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quis
-        dolore. Fugiat quasi dolores tempora placeat ipsa at veritatis soluta!
-      </p>
-      <span> <p>gfgfgfgfg bfgg</p></span>
-      <p>ffefeff dfdfdf dfdf</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Pseudo classes and elements</title>
+  </head>
+  <body>
+    <div class="menu">
+      Home <br />
+      Call me
     </div>
-   <!-- <span>
-      this is normal text, in span
-    </span>
-    <table>
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Address</th>
-        </tr>
-        <tr>
-          <td>Ali</td>
-          <td>22</td>
-          <td>Berlin</td>
-        </tr>
-        <tr>
-          <td>Olga</td>
-          <td>43</td>
-          <td>Amsterdam</td>
-        </tr>
-        <tr>
-          <td>Hadi</td>
-          <td>30</td>
-          <td>Berlin</td>
-        </tr>
-        <tr>
-          <td>Zain</td>
-          <td>14</td>
-          <td>LA</td>
-        </tr>
-      </table>-->
-    <form action="index.js" method="GET">
-        <input type="text" name="firstName" id="11" placeholder="enter you name" required/>
-        <span>*</span>
-        <input type="email" name="work-email" id="">
-        <br>
-        <img src="./img/sole.jpg" alt="tree and sun bigTree">
-        <br>
-        <input type="submit" value="send"/>
-        <input type="reset" value="clear"/>
-        <input type="checkbox" name="news" id="news-letter" value=""> send me all the updates </form>
-    </form>
+    <div class="main-text">
+      <h1>Hi, welcome to my page</h1>
+    </div>
+    <div class="form-input">
+      <form action="index.js" method="GET">
+        <input
+          type="text"
+          name="firstName"
+          id="1"
+          placeholder="enter your name"
+          required
+        /><br />
+        <input
+          type="password"
+          name="password"
+          id="2"
+          placeholder="your password"
+        /><br />
 
-    <div class="text">a new text</div>
-    <div class="text-main">Hello my name is </div>
-    <a href="https://www.google.com" target="_blank"> click me </a>
-    <a href="#top"> go up </a>
+       
+        <input type="submit" value="Send" id="send" />
+        
+        <input type="reset" value="Clear" id="clear"/>
+       
+      </form>
+    </div>
 
-This is the period table :
-    <table>
-        <tbody> 
-        <tr>
-          <td> H </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> He </td>
-        </tr>
-        <tr>
-          <td>Li</td>
-          <td>Be</td>
-          <td></td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> B </td>
-          <td> C </td>
-          <td> N </td>
-          <td> O </td>
-          <td> F </td>
-          <td> Ne </td>
-        </tr>
-        <tr>
-          <td> Na </td>
-          <td> Mg </td>
-          <td></td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> Al </td>
-          <td> Si </td>
-          <td> P </td>
-          <td> S </td>
-          <td> Cl </td>
-          <td> Ar </td>
-        </tr>
-        <tr>
-          <td>K</td>
-          <td>Ca</td>
-          <td>Sc</td>
-          <td> Ti</td>
-          <td> V </td>
-          <td> Cr </td>
-          <td> Mn </td>
-          <td> Fe </td>
-          <td> Co </td>
-          <td> Ni </td>
-          <td> Cu </td>
-          <td> Zn </td>
-          <td> Ga </td>
-          <td> Ge </td>
-          <td>  As</td>
-          <td> Se</td>
-          <td> Br</td>
-          <td> Kr</td>
-        </tr>
-        <tr>
-            <td> Rb </td>
-            <td> Sr</td>
-            <td> Y</td>
-            <td> Zr</td>
-            <td>Nb </td>
-            <td> Mo </td>
-            <td> Tc</td>
-            <td> Ru</td>
-            <td> Rh</td>
-            <td> Pd</td>
-            <td> Ag</td>
-            <td> Cd </td>
-            <td> In </td>
-            <td> Sn </td>
-            <td> Sb</td>
-            <td> Te</td>
-            <td> I</td>
-            <td> Xe</td>
-        </tr>
-        <tr>
-            <td> Cs </td>
-            <td> Ra </td>
-            <td> </td>
-            <td> Hf </td>
-            <td> Ta </td>
-            <td> W </td>
-            <td> Re </td>
-            <td> Os </td>
-            <td> Ir </td>
-            <td> Pt </td>
-            <td> Au </td>
-            <td> Hg </td>
-            <td> Tl</td>
-            <td> Pb </td>
-            <td> Ri </td>
-            <td> Po</td>
-            <td> At</td>
-            <td> Rn </td>
+    <div class="text">
+      There is a cool cat, next to the tree.
+      <br>
+    <img class="tree" src="./img/focus.jpg" alt="Tree and something" /> 
+  </div>
 
-        </tr>
-        <tr>
-            <td> Fr </td>
-            <td id="salmon"> Ra</td>
-            <td> </td>
-            <td> Rf</td>
-            <td> Db</td>
-            <td> Sg</td>
-            <td> Bh</td>
-            <td> Hs</td>
-            <td> Mt</td>
-            <td> Ds</td>
-            <td> Rg</td>
-            <td> Cn</td>
-            <td> Uut</td>
-            <td> Fl</td>
-            <td> Uup</td>
-            <td> Lv</td>
-            <td> Uus </td>
-            <td id="salmon"> Uuo</td>
-        </tr>
-        <tr>
-            <td> </td>
-            <td> La</td>
-            <td> Ce</td>
-            <td> Pr</td>
-            <td> Nd</td>
-            <td> Pm</td>
-            <td> Sm</td>
-            <td> Eu</td>
-            <td> Gd </td>
-            <td> Tb</td>
-            <td> Dy</td>
-            <td> Ho</td>
-            <td> Er</td>
-            <td> Tm</td>
-            <td> Yb </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-           
-        </tr>
-        <tr>
-            <td> </td>
-            <td> La</td>
-            <td> Ce</td>
-            <td> Pr</td>
-            <td> Nd</td>
-            <td> Pm</td>
-            <td> Sm</td>
-            <td> Eu</td>
-            <td> Gd </td>
-            <td> Tb</td>
-            <td> Dy</td>
-            <td> Ho</td>
-            <td> Er</td>
-            <td> Tm</td>
-            <td> Yb </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-    
-      </table>
-    </tbody>
-
-
-</body>
+  <div class="para"> 
+       <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit earum in
+      magnam corrupti! Tenetur tempora accusamus veniam illo debitis est.
+    </p>
+    </div>
+    <br>
+    <div class="last-img">
+      <img src="./img/holidays.jpeg" alt="holidays">
+    </div>
+ 
+  </body>
 </html>

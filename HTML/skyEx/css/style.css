@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-size: 16px;
+}
+
+.main-text {
+   display: flex;
+   padding:2rem;
+   align-items: center;
+   justify-content:center;
+   width: 100vw;
+   height: 100vh;
+   background-image:url(../img/parachute.gif),url(../img/thomas.gif),url(../img/pajaros2.gif),url(../img/nave.gif), url(../img/nubes.gif);
+   background-repeat:no-repeat,no-repeat,no-repeat,no-repeat, no-repeat;
+   background-attachment: unset,unset,unset,unset, fixed;
+   animation-delay: 15s, 0s, 0s, 7s, 0s;
+   background-position:  1% 95%,left 40%, 100% 1% ,100% 90%, center;
+   background-size: 200px, 95rem,300px,300px, cover;
+   background-color: transparent;
+   transition-delay: 10s,0s,0s,7s,0s;
+}
+
+
+
