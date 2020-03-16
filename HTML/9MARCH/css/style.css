@@ -1,0 +1,73 @@
+/*Typography */ 
+
+/*Font-link*/
+@font-face{
+    font-family: "Bellota" ;
+    src:url(../fonts/Bellota/Bellota-BoldItalic.ttf)
+}
+
+/*font-family*/
+
+/* the star is for EVERYTHING */
+*{
+    margin:3%;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 26px;
+}
+/*better add the font size on the root*/
+:root{
+    font-size: 16px;
+    --color-font:pink; /*i can create variables*/
+    --erika-main-text:2px 2px;
+}
+
+h1{
+    font-family: 'Bellota', cursive;
+    color:var(--color-font); /*and call the variable here, variable on css is like on javascript: we can declare it once and use it multiple times*/
+    padding:var(--erika-main-text);
+     /* direction:rtl; */
+    writing-mode: horizontal-tb;
+    text-orientation: upright;
+    text-shadow: 2px 2px 2px orange, 3px 3px 5px pink, 4px 2px grey;
+}
+
+div{
+    font-size: 20px;
+}
+
+/*Font-size*/
+p {
+    font-size: 1rem;
+    font-style: oblique 90deg;
+    font-weight: bold;
+   /* font:italic 2rem 'Bellota'; */
+   font-variant: initial;
+   line-height: 2em;
+   font-display:initial;
+   font-stretch:ultra-condensed;
+   text-align: justify;
+   text-transform: lowercase;
+   word-break: break-all;/*this will split the long words into another line if there isn't enough space*/
+   text-indent: 2em;/*this is the option to "tabular" la primera linea*/
+   word-spacing: 30px;
+  
+}
+/*rem is a value look into the root element, check the value and then multiply
+em will look also, but for the parent element and then will be multiply by the number that it has*/
+i {
+    color: hotpink;
+    font-size: xx-large;
+}
+.box{
+    width: 80vw;
+    height: 80vh;
+    background-image: linear-gradient(45deg, red, pink, purple);
+    
+}
+
+
+
+
+
+/* 100 -900 */

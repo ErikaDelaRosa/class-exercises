@@ -1,0 +1,8 @@
+body{
+    background: linear-gradient(red, orange, yellow, green, blue); 
+    /*background:repeating-linear-gradient(blue, purple, yellow)*/
+    /*background: linear-gradient(45deg, red, blue)*/
+    /*background: linear-gradient(135deg, orange, orange 60%, cyan)*/
+    /*background: linear-gradient(to right, 
+     red 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80%);*/
+}

@@ -1,0 +1,46 @@
+#puppy1{
+    width:300px ;
+    height:300px;
+    border:10px black double;
+    transform:  rotate(20deg);
+    opacity: 0.3;
+
+}
+#puppy2{
+    width:300px ;
+    height:300px;
+    border: 10px;
+    border:10px black double;
+    transform:  rotate(25deg);
+    opacity: 0.5;
+
+}
+#puppy3{
+    width:300px ;
+    height:300px;
+    border:10px;
+    border:10px black double;
+    transform:  rotate(40deg);
+    opacity: 0.7;
+}
+#puppy4{
+    border:10px;
+    border:10px black double;
+    transform: rotate(60deg);
+}
+#puppy4:hover{
+    transform: rotate(0deg);
+    opacity: 0.5;
+}
+img{
+    width:300px ;
+    height:300px;
+}
+img:hover{
+    background-color: blueviolet;
+    filter: grayscale(7%);
+    transform: scale(1.1);
+    transform: rotate(0deg);
+    opacity: 0.5;
+    cursor:zoom-in;
+}

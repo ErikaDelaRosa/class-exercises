@@ -1,0 +1,62 @@
+* {
+    margin: 10px;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 250px 3rem 1fr; */
+    grid-template-rows: 15% 20% 20%;
+    height: 100vh;
+    grid-template-areas:
+      "box1 box1 box1 box1  box1 box1"
+      "box2 box2 box2 box2 box2 box3"
+      "box4 box4 box4 box4 box4 box3";
+    row-gap: 2rem;
+    column-gap: 3rem;
+    /* grid-row-gap: 3rem */
+  }
+  
+  .box1 {
+    background-image: url(../img/lemons.png);
+    background-size: unset;
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2; */
+    grid-area: box1;
+  }
+  .box2 {
+    background-image: url(../img/apple.jpeg);
+    background-size: cover;
+    /* grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+    grid-area: box2;
+  }
+  .box3 {
+    background-image:url(../img/str1.jpeg);
+    background-size: cover;
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1; */
+    grid-area: box3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box4 {
+    background-image: url(../img/pears.jpeg);
+    background-size: cover;
+    /* grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1; */
+    grid-area: box4;
+  }
+  .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

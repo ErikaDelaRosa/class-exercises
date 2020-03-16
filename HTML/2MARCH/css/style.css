@@ -1,0 +1,356 @@
+/* CSS selectors */
+
+/* Element selector */
+html {
+    font-size: 16px;
+    margin: 0;
+  }
+  /* #ID selector */
+  #random-text {
+    color: teal;
+  }
+  /* .class selector */
+  .main-page {
+    background-color: yellow;
+  }
+  /* element,element Selector
+  element  AND element 
+  */
+  span,
+  div {
+    background-color: turquoise;
+  }
+  /* element element Selector
+  element inside element 
+  */
+  div p {
+    color: firebrick;
+  }
+  /* element>element	 Selector  
+  element parent element */
+  div > p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  /* element+element  Selector
+  element immediately after element */
+  div + span {
+      color:orchid;
+  }
+  
+  /* element1~element2 Selector 
+  element preceded element - i am looking for any paragraph where span was before*/
+  span ~ p {
+      color:peachpuff;
+  }
+  
+  /* [attribute] Selector */
+  [name]{
+      background-color: sandybrown;
+   }
+  
+  /* [attribute=value] Selector  */
+
+  [type="submit"] {
+      background-color: rebeccapurple;
+  } 
+  
+  /* [attribute~=value] Selector
+  containing the value - i am selecting any element on my page that contains element alt that contains "sun"*/
+  [alt~="sun"]{
+      width: 120px;
+  }
+
+  /* [attribute^=value] Selector
+  begins with the value - any alt start with. Between the first and the second, always the latest to arrive has more power */
+  [alt^="tree"] {
+      border-radius: 20%;
+      border:2px #694740 solid;
+  }
+  /* [attribute$=value] Selector
+  value ends with  */
+  [alt$="bigTree"]{
+      padding:5px;
+  }
+
+  /* [attribute*=value] Selector
+  contains the substring. All the div contains the attributes class, are selected */
+  [class*="text"]{
+    font-size: 2rem;
+    width: 450px;
+    height: 400px;
+  }
+  
+  /* pseudo class  */
+
+  /*active*/ 
+a:active {
+    background-color: tomato;
+    border-radius: 30%;
+}
+
+  /* :hover */
+  [class*="text"]:hover {
+      background-color: olive;
+  }
+
+  /* :visited */
+  a:visited{
+      color:rgb(212, 47, 75);
+  }
+  input:focus{
+      outline:none; /*I am removing the default setting*/
+      color: purple solid;
+      box-shadow: 3px 3px 3px rgb(245, 12, 245);
+  }
+  input:[required]+span {
+      color:red; 
+  }
+
+  /*checked*/
+  input:checked {
+      width: 20px;
+      background-color: sandybrown;
+  }
+  /*active- one : for css3(only internet explorer), two :: for css5*/
+  div[class="text-main"]::after{
+    content:" Erika";
+  }
+ 
+  div[class="text-main"]::before {
+      content:"Buenos dias ";
+  }
+  /*target- we use it when we want to change the color on the selected target, as for example
+  an item on a menu list*/
+  :target{ 
+    border:3px black dashed;
+  }
+  /* :nth-child() - n(any number)*/
+  /*
+  tr:nth-child(2n +1) {
+      background-color: darkorange;
+  }
+
+  /*tr:nth-child(3n) {
+    background-color: darkred;
+    }
+    tr:nth-last-child(1){
+        background-color: darkslateblue;
+    }
+
+      /* ::after  
+  :after css2 and ::after is css3*/
+
+  table {
+      width: 950px;
+      height: 750px;
+      background-color: white;
+      border: black solid;
+      text-align: center;
+  }
+
+  tr, td {
+      border:2px black solid;
+      border-radius: 12%;
+  }
+
+  tr:nth-child(1) :first-child,
+  tr:nth-child(2) :nth-child(14),
+  tr:nth-child(2) :nth-child(15),
+  tr:nth-child(2) :nth-child(16),
+  tr:nth-child(3) :nth-child(15),
+  tr:nth-child(3) :nth-child(16) {
+background-color: yellow;
+  }
+
+  tr:nth-child(1) :last-child,
+  tr:nth-child(7) :nth-child(16),
+  tr:nth-child(2) :last-child,
+  tr:nth-child(3) :last-child,
+  tr:nth-child(4) :last-child,
+  tr:nth-child(5) :last-child,
+  tr:nth-child(6) :last-child{
+      background-color: fuchsia;
+  }
+  tr:nth-child(7) :nth-child(17){
+      background-color: mediumturquoise;
+  }
+
+tr:nth-child(7) :last-child {
+    background-color: rgb(250, 130, 50);
+}
+
+  tr:nth-child(2) :first-child {
+    background-color: rgb(39, 185, 243);
+      }
+
+tr:nth-child(3) :first-child {
+        background-color: rgb(39, 185, 243);
+    }
+tr:nth-child(4) :first-child {
+        background-color: rgb(39, 185, 243);
+    }
+tr:nth-child(5) :first-child {
+        background-color: rgb(39, 185, 243);
+    }
+tr:nth-child(6) :first-child {
+        background-color: rgb(39, 185, 243);
+    }
+tr:nth-child(7) :first-child {
+        background-color: rgb(39, 185, 243);
+    }
+
+tr:nth-child(8) :nth-child(2),
+tr:nth-child(8) :nth-child(3),
+tr:nth-child(8) :nth-child(4),
+tr:nth-child(8) :nth-child(5),
+tr:nth-child(8) :nth-child(6),
+tr:nth-child(8) :nth-child(7),
+tr:nth-child(8) :nth-child(8),
+tr:nth-child(8) :nth-child(9),
+tr:nth-child(8) :nth-child(10),
+tr:nth-child(8) :nth-child(11),
+tr:nth-child(8) :nth-child(12),
+tr:nth-child(8) :nth-child(13),
+tr:nth-child(8) :nth-child(14),
+tr:nth-child(8) :nth-child(15){
+        background-color: rgb(46, 250, 148);
+    }
+   
+tr:nth-child(9) :nth-child(2),
+tr:nth-child(9) :nth-child(3),
+tr:nth-child(9) :nth-child(4),
+tr:nth-child(9) :nth-child(5),
+tr:nth-child(9) :nth-child(6),
+tr:nth-child(9) :nth-child(7),
+tr:nth-child(9) :nth-child(8),
+tr:nth-child(9) :nth-child(9),
+tr:nth-child(9) :nth-child(10),
+tr:nth-child(9) :nth-child(11),
+tr:nth-child(9) :nth-child(12),
+tr:nth-child(9) :nth-child(13),
+tr:nth-child(9) :nth-child(14),
+tr:nth-child(9) :nth-child(15){
+        background-color: #2efaf0;
+    }  
+
+   tr:nth-child(2) :nth-child(2) {
+       background-color: salmon;
+   }
+   tr:nth-child(3) :nth-child(2) {
+    background-color: salmon;
+}
+tr:nth-child(4) :nth-child(2) {
+    background-color: salmon;
+}
+tr:nth-child(5) :nth-child(2) {
+    background-color: salmon;
+}
+tr:nth-child(6) :nth-child(2) {
+    background-color: salmon;
+}
+tr:nth-child(7) :nth-child(2) {
+    background-color: salmon;
+}
+
+tr:nth-child(4) :nth-child(3),
+tr:nth-child(4) :nth-child(4),
+tr:nth-child(4) :nth-child(5), 
+tr:nth-child(4) :nth-child(6),
+tr:nth-child(4) :nth-child(7),
+tr:nth-child(4) :nth-child(8),
+tr:nth-child(4) :nth-child(9),
+tr:nth-child(4) :nth-child(10),
+tr:nth-child(4) :nth-child(11),
+tr:nth-child(4) :nth-child(12){
+    background-color: rgb(13, 197, 6);
+}
+tr:nth-child(5) :nth-child(3),
+tr:nth-child(5) :nth-child(4),
+tr:nth-child(5) :nth-child(5), 
+tr:nth-child(5) :nth-child(6),
+tr:nth-child(5) :nth-child(7),
+tr:nth-child(5) :nth-child(8),
+tr:nth-child(5) :nth-child(9),
+tr:nth-child(5) :nth-child(10),
+tr:nth-child(5) :nth-child(11),
+tr:nth-child(5) :nth-child(12){
+    background-color: rgb(13, 197, 6);
+}
+
+tr:nth-child(6) :nth-child(4),
+tr:nth-child(6) :nth-child(5), 
+tr:nth-child(6) :nth-child(6),
+tr:nth-child(6) :nth-child(7),
+tr:nth-child(6) :nth-child(8),
+tr:nth-child(6) :nth-child(9),
+tr:nth-child(6) :nth-child(10),
+tr:nth-child(6) :nth-child(11),
+tr:nth-child(6) :nth-child(12){
+    background-color: rgb(13, 197, 6);
+}
+tr:nth-child(7) :nth-child(4),
+tr:nth-child(7) :nth-child(5), 
+tr:nth-child(7) :nth-child(6),
+tr:nth-child(7) :nth-child(7),
+tr:nth-child(7) :nth-child(8),
+tr:nth-child(7) :nth-child(9),
+tr:nth-child(7) :nth-child(10),
+tr:nth-child(7) :nth-child(11),
+tr:nth-child(7) :nth-child(12){
+    background-color: rgb(13, 197, 6);
+}
+tr:nth-child(7) :nth-child(12){
+    background-color: rgb(13, 197, 6);
+}
+tr:nth-child(4) :nth-child(13){
+    background-color: lightpink;
+}
+tr:nth-child(3) :nth-child(14),
+tr:nth-child(4) :nth-child(14),
+tr:nth-child(4) :nth-child(15),
+tr:nth-child(2) :nth-child(13),
+tr:nth-child(5) :nth-child(15),
+tr:nth-child(5) :nth-child(16),
+tr:nth-child(6) :nth-child(16){
+    background-color: rgb(224, 112, 129);
+}
+tr:nth-child(4) :nth-child(16) {
+    background-color: yellow;
+}
+tr:nth-child(3) :nth-child(13),
+tr:nth-child(5) :nth-child(13),
+tr:nth-child(5) :nth-child(14),
+tr:nth-child(6) :nth-child(13),
+tr:nth-child(6) :nth-child(14),
+tr:nth-child(6) :nth-child(15),
+tr:nth-child(7) :nth-child(13),
+tr:nth-child(5) :nth-child(14),
+tr:nth-child(7) :nth-child(14){
+    background-color: lightpink;
+}
+
+
+
+tr:nth-child(5) :nth-child(3) {
+    background-color: rgb(13, 197, 6);
+}
+tr:nth-child(6) :nth-child(3) {
+    background-color: rgb(46, 250, 148);
+}
+tr:nth-child(7) :nth-child(3) {
+    background-color: #2efaf0;
+}
+
+tr:nth-child(2) :nth-child(17),
+tr:nth-child(3) :nth-child(17),
+tr:nth-child(4) :nth-child(17),
+tr:nth-child(5) :nth-child(17),
+tr:nth-child(6) :nth-child(17),
+tr:nth-child(7) :nth-child(15){
+background-color: orange;
+}
+
+
+
+   

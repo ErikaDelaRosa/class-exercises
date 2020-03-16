@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-size: 16px;
+}
+
+.main-text{
+    display: flex;
+    padding:2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    background-image: url(../img/unnamed.gif),url(../img/sky.png);/* in css this is the only place where you can place "" or without. with a coma in between both images can be display as background*/
+    background-repeat: repeat-x, no-repeat;/*where i want it to be repeated - left, right...etc. Also, i can place the order here for the images above and separate them with comas. all in one line*/
+    background-position: center;/*where i want it to be positioned*/
+    background-size: 80rem, cover ;/* for cover you should have a very good quality picture, as it will take the whole space of the page.*/
+}
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+/*background-clip: border-box*/
+.ex1 {
+    border: 4px black dashed;
+    padding: 20px;
+    background-color: aqua;
+    background-clip: border-box;
+  }
+  .ex2 {
+    border: 4px black dashed;
+    padding: 20px;
+    background-color: aqua;
+    background-clip: content-box;
+  }
+  .ex3 {
+    border: 4px black dashed;
+    padding: 20px;
+    background-color: aqua;
+    background-clip: padding-box;
+  }
+  .ex4{
+      color:transparent;
+      background-image: url(../img/tree.jpeg);
+     -webkit-background-clip: text;
+     background-clip: text;
+  }
+  .ex5{
+      background-image: url(../img/littlebirds.png);
+      background-size: 55rem;
+      background-position: center;
+      background-attachment: fixed;
+  }
