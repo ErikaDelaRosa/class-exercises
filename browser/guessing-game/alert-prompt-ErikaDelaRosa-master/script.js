@@ -8,7 +8,8 @@ if(x == y) {
     alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN " + guess + " GUESS ");
 } else if(x > y){
 guess++; alert("OOPS SORRY!! TRY A SMALLER NUMBER");
-} else { guess++; alert("OOPS SORRY!! TRY A GREATER NUMBER");
+} else if  (guess++) {
+    alert(`OOPS SORRY!! TRY A GREATER NUMBER`);
  } else { 
      alert(`Sorry, you failed to guess the number in the three attempts. The number was ${guess}`);
  }
