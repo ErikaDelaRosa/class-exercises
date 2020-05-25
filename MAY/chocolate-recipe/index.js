@@ -2,10 +2,10 @@
 //water as people is lactose intolerant
 //rum because life is short and have to always upgrade everything we do!
 
-function makeHotChocolate(callback){
+function makeHotChocolate(callback1){
     setTimeout(() => {
         let water = "boiled";
-        callback(water, callback2);
+        callback1(water, callback2);
     },1000);
 }
 
@@ -43,7 +43,7 @@ function callback6 (topping){
     }
 }
 
-//makeHotChocolate(callback);
+makeHotChocolate(callback1);
 
 /*function milkCheck(response) {
   return new Promise((resolve) => {
