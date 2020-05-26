@@ -82,12 +82,16 @@ Get the index of the middle number by dividing the last index of the set by two:
 If the resulting index is a whole number (e.g. 7) then the median of the set is the value in that index.
 Otherwise (if num is a fraction, e.g. 7.5) then the median is calculated by adding the two values in the indexes around it (for 7.5 it would be 7, and 8 ) and dividing them by two. */
 
+/*  the median is the value separating the higher half from the lower half of a data sample, a population or a probability distribution. For a data set, it may be thought of as the "middle" value. For example, the basic advantage of the median in describing data compared to the mean (often simply described as the "average") is that it is not skewed so much by a small proportion of extremely large or small values, and so it may give a better idea of a "typical" value.  */
+
 function sum(numArray) {
     return numArray.reduce((sum, n) => sum + n, 0);
   }
   function avg(numArray) {
     return sum(numArray) / numArray.length;
   }
+  let numArray = [4,6,2,7,8,9];
+
   //const [operation, ...rest] = args;
   
   //const numbers = rest.map(parseNum);
@@ -112,12 +116,20 @@ function sum(numArray) {
    numbers(5,7,8,9);
    */
 
-   var calculateN = [7,5,3,6,7,9];
+    //this is my first part of the exercise
+   let calculateN = [7,5,3,6,7,9];
    //////////index=  0,1,2,3,4,5;
    var average = (calculateN / calculateN.length) * calculateN.length;
    console.log(average);
 
    for (var i = 0; i < calculateN.length; i++) {
-       var average = (calculatedN[3,4,5] / calculateN.length[3,4,5]) * calculateN.length
+       var average = (calculatedN / calculateN.length) * calculateN.length
    }
    console.log(average);
+
+   const reduce = (accumulator, currentValue) => accumulator + currentValue;
+   console.log(calculateN.reduce(reducer)); //how to create the sum of the numbers of the array.
+   const result = reducer / currentValue; // reduce divide by amount of numbers to have average
+
+
+
