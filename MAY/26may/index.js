@@ -99,7 +99,7 @@ function sum(numArray) {
   // avg 45 6 67
   
   //i have change the order to follow the logic: first find out the numbers in the middle, then make the sum, and last make the average only of those numbers. 
-   switch (operation) {
+   /*switch (operation) {
      case "mid":
        console.log(mid(numbers));
        break;
@@ -109,12 +109,14 @@ function sum(numArray) {
           case "avg":
        console.log(avg(numbers));
        break;
+
      //default:
        //console.log(
        // "I cannot do this, please type 'sum' to calculate Sum or 'avg' to calculate Avg"
        //);
    };
-   numbers(5,7,8,9);
+   */
+   let numbers = [5,7,8,9];
     //this is my first part of the exercise
    let calculateN = [7,5,3,6,7,9];
    //////////index=  0,1,2,3,4,5;
@@ -128,7 +130,11 @@ function sum(numArray) {
 
    const reduce = (accumulator, currentValue) => accumulator + currentValue;
    console.log(calculateN.reduce(reducer)); //how to create the sum of the numbers of the array.
+   
    const result = reducer / currentValue; // reduce divide by amount of numbers to have average
+   console.log(result);
+
+
 
 
 
