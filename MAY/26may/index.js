@@ -116,6 +116,7 @@ function sum(numArray) {
        //);
    };
    */
+  /*
    let numbers = [5,7,8,9];
     //this is my first part of the exercise
    let calculateN = [7,5,3,6,7,9];
@@ -133,6 +134,26 @@ function sum(numArray) {
    
    const result = reducer / currentValue; // reduce divide by amount of numbers to have average
    console.log(result);
+*/
+
+// module exports
+//how to export functions from one file to another
+
+const math = require("./math");
+console.log(math);
+
+let x = 5,
+  y = 4;
+console.log(`x + y = ${math.sum(x, y)}`);
+console.log(`x + y = ${math.sub(x, y)}`);
+console.log(`x + y = ${math.multi(x, y)}`);
+
+fs.copyFile("original.txt","copyFromOg.txt",(err)=>{
+    if (err) throw err;
+    console.log('text copied done');
+});
+
+const data = fs.readFileSync()
 
 
 
