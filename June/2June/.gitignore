@@ -1,0 +1,5 @@
+/*here we add the things we want to exclude to be read*/
+ 
+node_modules/
+
+config.js
