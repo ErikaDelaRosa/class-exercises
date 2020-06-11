@@ -1,0 +1,7 @@
+/node_modules
+
+npm init
+npm i react
+npm i react-dom
+npm i react-scripts
+npm i node-sass --save
