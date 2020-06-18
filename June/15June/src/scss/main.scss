@@ -7,3 +7,8 @@ body {
   li:nth-child(2) {
     background-color: lightgrey;
   }
+  ul {
+    background-color: lightcoral;
+    list-style:none;
+    display: flex;
+  }

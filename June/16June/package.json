@@ -1,5 +1,5 @@
 {
-  "name": "15june",
+  "name": "16june",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,12 +8,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "classnames": "^2.2.6",
+    "bootstrap": "^4.5.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1"
   },
   "devDependencies": {},
-  "description": "Extra information: https://reactjs.org/tutorial/tutorial.html"
+  "description": ""
 }

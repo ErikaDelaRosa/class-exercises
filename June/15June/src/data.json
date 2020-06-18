@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "name": "Erika",
+      "address": "Berlin"
+    },
+    {
+      "id": 2,
+      "name": "Alba",
+      "address": "Mallorca"
+    },
+    {
+      "id": 3,
+      "name": "Issa",
+      "address": "Malaga"
+    }
+  ]
